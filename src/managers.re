@@ -47,7 +47,7 @@ module BattleManager = {
   };
   let calculateAndPrintEscape = (name, number) => {
     let escaped = number > 50 ? true : false;
-    let res = escaped ? Printf.sprintf("%s escaped!", name) : Printf.sprintf("%s failed to escaped", name);
+    let res = escaped ? Printf.sprintf("%s escaped!", name) : Printf.sprintf("%s failed to escape.", name);
     res |> waitInput;
     escaped;
   };
